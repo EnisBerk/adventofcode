@@ -28,15 +28,15 @@ def test_generate_points():
     '''
     test generate points
     '''
-    # short_input = [[(0,9), (5,9)]]
-    # a_line = next(load_data(short_input))
-    # line = list(generate_points(a_line))
-    # assert line ==[(0,9), (1,9), (2,9), (3,9), (4,9), (5,9)]
+    short_input = [[(0,9), (5,9)]]
+    a_line = next(load_data(short_input))
+    line = list(generate_points(a_line))
+    assert line ==[(0,9), (1,9), (2,9), (3,9), (4,9), (5,9)]
     
-    # short_input = [[(0,3), (5,9)]]
-    # a_line = next(load_data(short_input))
-    # line = list(generate_points(a_line))
-    # assert line == []
+    short_input = [[(0,3), (5,9)]]
+    a_line = next(load_data(short_input))
+    line = list(generate_points(a_line))
+    assert line == []
 
     short_input = [[(1,1), (3,3)]]
     a_line = next(load_data(short_input))
