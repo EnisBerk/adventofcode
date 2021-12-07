@@ -25,10 +25,9 @@ def run_cycles(days,initial_state):
     kids=[0,0]
     for i in range(days):
         i = i%7
-        growing_kids= kids[0]
-        kids[0] = kids[1]
-        kids[1] = initial_state[i]
-        initial_state[(i+7)%7]+= growing_kids
+        growing_kids = kids[0]
+        kids[0],kids[1] = kids[1],initial_state[i]
+        initial_state[i]+= growing_kids
 
     return sum(initial_state)+sum(kids)
 
