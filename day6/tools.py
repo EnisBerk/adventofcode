@@ -42,3 +42,6 @@ def part1(text,days):
     total_count = run_cycles(days,initial_state)
     return total_count
 
+def part2(text,days):
+    return part1(text,days)
+
