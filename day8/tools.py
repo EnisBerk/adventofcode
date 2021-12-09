@@ -1,5 +1,5 @@
 '''
-tools for advent code day 7
+tools for advent code day 8
 '''
 from collections import Counter
 

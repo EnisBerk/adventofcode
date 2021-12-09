@@ -1,6 +1,6 @@
 '''
-Solution to day 6 of Advent of Code 2021: .
-https://adventofcode.com/2021/day/7
+Solution to day 8 of Advent of Code 2021: .
+https://adventofcode.com/2021/day/8
 '''
 from tools import part1, part2
 
