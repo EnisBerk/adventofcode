@@ -9,4 +9,4 @@ input_text = '''2199943210
 
 def test_part1():
     assert part1(input_text) == 15
-    # assert part2(input_text) == 61229
+    assert part2(input_text) == 1134

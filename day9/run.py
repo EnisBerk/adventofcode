@@ -8,7 +8,7 @@ def main():
     '''
     Main function for running the solution.
     '''
-    with open('day8/input.txt', 'r',encoding='utf-8') as f:
+    with open('day9/input.txt', 'r',encoding='utf-8') as f:
         data = f.read()
     print(f'Part 1: {part1(data)}')
     print(f'Part 2: {part2(data)}')
