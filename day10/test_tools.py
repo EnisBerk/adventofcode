@@ -14,4 +14,5 @@ input_text = '''[({(<(())[]>[[{[]{<()<>>
 
 def test_part1():
     assert part1(input_text) == 26397
-    # assert part2(input_text) == 1134
+    assert part2(input_text) == 288957
+
