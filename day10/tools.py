@@ -2,8 +2,6 @@
 tools for advent code day 10
 '''
 from collections import deque
-from operator import is_
-import re
 
 
 def load_data(text):
@@ -63,6 +61,7 @@ def calc_part1_score(illegal_counts):
 
     return sum(score_per_char.values())
 
+
 def calc_part2_line_score(completing_chars):
     '''
     calculate part 2 score
@@ -73,12 +72,13 @@ def calc_part2_line_score(completing_chars):
         ']': 2,
         '>': 4,
     }
-    total_score=0
+    total_score = 0
     for char in completing_chars:
-        total_score*=5
-        total_score+=score_per_char[char]
+        total_score *= 5
+        total_score += score_per_char[char]
 
     return total_score
+
 
 def is_valid(line):
     '''
@@ -96,6 +96,7 @@ def is_valid(line):
             else:
                 return char
     return stack
+
 
 def part1(data):
     '''
@@ -123,7 +124,7 @@ def part2(data):
     '''
     data = load_data(data)
 
-    scores=[]
+    scores = []
     for line in data:
         completing_chars = []
         out = is_valid(line)
@@ -131,7 +132,7 @@ def part2(data):
             while len(out) > 0:
                 char = out.pop()
                 completing_chars.append(other_side(char))
-            line_score=calc_part2_line_score(completing_chars)
+            line_score = calc_part2_line_score(completing_chars)
             scores.append(line_score)
     scores.sort()
-    return scores[len(scores)//2]
+    return scores[len(scores) // 2]
