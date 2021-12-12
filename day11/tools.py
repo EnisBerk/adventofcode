@@ -1,7 +1,6 @@
 '''
 tools for advent code day 11
 '''
-from collections import deque
 
 
 def load_data(text):
@@ -83,7 +82,6 @@ def part1(data,steps=10):
     '''
     part 1
     '''
-    pass
     data = load_data(data)
     grid = Grid(data)
     for _ in range(steps):
